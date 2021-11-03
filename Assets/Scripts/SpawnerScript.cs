@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class SpawnerScript : MonoBehaviour
 {
     public GameObject[] drops;
@@ -18,10 +19,13 @@ public class SpawnerScript : MonoBehaviour
             SpawnRandom();
         }
     }
-
+ 
     private void SpawnRandom()
     {
         int id = Random.Range(0, drops.Length);
         GameObject drop = Instantiate(drops[id], transform);
+        Score.score++;
     }
+
+    
 }
