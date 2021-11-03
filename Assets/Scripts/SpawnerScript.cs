@@ -5,7 +5,6 @@ using UnityEngine;
 public class SpawnerScript : MonoBehaviour
 {
     public GameObject[] drops;
-    public float range = 3f;
     public float coolDown = 5f;
     private float timer = 0f;
 
@@ -20,17 +19,9 @@ public class SpawnerScript : MonoBehaviour
         }
     }
 
-    public void SpawnRandom()
+    private void SpawnRandom()
     {
         int id = Random.Range(0, drops.Length);
-        Spawn(drops[id]);
-    }
-
-    public void Spawn(GameObject go)
-    {
-        GameObject drop = Instantiate(go, transform);
-        float rnd = Random.Range(-range, range);
-        drop.transform.position = new Vector2(drop.transform.position.x + rnd, drop.transform.position.y);
-        
+        GameObject drop = Instantiate(drops[id], transform);
     }
 }
