@@ -162,7 +162,6 @@ MonoBehaviour:
   - {fileID: 3817938598914915682, guid: 11acf3417cd2d314c989715967953caf, type: 3}
   - {fileID: 2328251674771926525, guid: a13a22fbc9f03cd4c9c11e33debca7c6, type: 3}
   - {fileID: 594259869363358958, guid: 5c79d6e25f4e4e047a58d6b69c11880a, type: 3}
-  score: {fileID: 1481764091}
   coolDown: 1.74
 --- !u!4 &398213399
 Transform:
@@ -272,9 +271,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 398213397}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 051ed669f96171b4c8049655be183b86, type: 3}
+  m_Script: {fileID: 11500000, guid: 2fd1a9eb9de19094cbea68e4a4b54611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreDisplay: {fileID: 1581734008}
+  lifesDisplay: {fileID: 1192114119}
 --- !u!1 &415475754
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,7 +521,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b614d2ae118e3d40b5d53d8a91e6112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 1481764091}
 --- !u!61 &982695812
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -748,7 +748,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Missed Toppings: 0'
+  m_Text: 'Remaining Lifes: 0'
 --- !u!222 &1192114122
 CanvasRenderer:
   m_ObjectHideFlags: 0
