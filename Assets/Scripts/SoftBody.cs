@@ -5,6 +5,7 @@ using UnityEngine.U2D;
 
 public class SoftBody : MonoBehaviour
 {
+    // SOURCE: https://www.youtube.com/watch?v=F82BlnW5z6g
     private const float splineOffset = 0.5f;
 
     [SerializeField]
