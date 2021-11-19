@@ -26,5 +26,15 @@ public class MovementScript : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
         }
+
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            GetComponent<SpawnerScript>().getDrop().transform.Rotate(0, 1, 0);
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            GetComponent<SpawnerScript>().getDrop().transform.Rotate(0, -1, 0);
+        }
+        
     }
 }
