@@ -101,7 +101,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 1
   m_AngularDrag: 1
   m_GravityScale: 1
@@ -143,7 +143,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.15711467
+  m_Distance: 0.2356719
   m_MaxDistanceOnly: 0
 --- !u!231 &1875410359355711032
 SpringJoint2D:
@@ -162,9 +162,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.14928447
+  m_Distance: 0.22392663
   m_DampingRatio: 0
-  m_Frequency: 3
+  m_Frequency: 5
 --- !u!231 &1875410359355711033
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -182,7 +182,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.15711467
+  m_Distance: 0.2356719
   m_DampingRatio: 0
   m_Frequency: 3
 --- !u!231 &1875410359355711038
@@ -202,7 +202,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.15541556
+  m_Distance: 0.23312339
   m_DampingRatio: 0
   m_Frequency: 3
 --- !u!114 &5799621954288097866
@@ -318,7 +318,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 1
   m_AngularDrag: 1
   m_GravityScale: 1
@@ -360,7 +360,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.14669695
+  m_Distance: 0.22004545
   m_MaxDistanceOnly: 0
 --- !u!231 &1875410359772506694
 SpringJoint2D:
@@ -379,9 +379,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.1532033
+  m_Distance: 0.22980489
   m_DampingRatio: 0
-  m_Frequency: 3
+  m_Frequency: 5
 --- !u!231 &1875410359772506695
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -399,7 +399,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.14669695
+  m_Distance: 0.22004545
   m_DampingRatio: 0
   m_Frequency: 3
 --- !u!231 &1875410359772506692
@@ -419,7 +419,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.15211838
+  m_Distance: 0.22817756
   m_DampingRatio: 0
   m_Frequency: 3
 --- !u!114 &3494565788349616128
@@ -714,7 +714,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 1
   m_AngularDrag: 1
   m_GravityScale: 1
@@ -756,7 +756,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.1600031
+  m_Distance: 0.24000469
   m_MaxDistanceOnly: 0
 --- !u!231 &1875410360153950206
 SpringJoint2D:
@@ -775,9 +775,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.15848547
+  m_Distance: 0.23772821
   m_DampingRatio: 0
-  m_Frequency: 3
+  m_Frequency: 5
 --- !u!231 &1875410360153950207
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -795,7 +795,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.1600031
+  m_Distance: 0.24000469
   m_DampingRatio: 0
   m_Frequency: 3
 --- !u!231 &1875410360153950204
@@ -815,7 +815,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.14669695
+  m_Distance: 0.22004545
   m_DampingRatio: 0
   m_Frequency: 3
 --- !u!114 &7394721921149122501
@@ -931,7 +931,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 1
   m_AngularDrag: 1
   m_GravityScale: 1
@@ -973,7 +973,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.14958613
+  m_Distance: 0.22437915
   m_MaxDistanceOnly: 0
 --- !u!231 &1875410360511182652
 SpringJoint2D:
@@ -992,9 +992,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.14978863
+  m_Distance: 0.22468297
   m_DampingRatio: 0
-  m_Frequency: 3
+  m_Frequency: 5
 --- !u!231 &1875410360511182653
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -1012,7 +1012,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.14958613
+  m_Distance: 0.22437915
   m_DampingRatio: 0
   m_Frequency: 3
 --- !u!231 &1875410360511182626
@@ -1032,7 +1032,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.1600031
+  m_Distance: 0.24000469
   m_DampingRatio: 0
   m_Frequency: 3
 --- !u!114 &4854150535045377930
@@ -1148,7 +1148,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 1
   m_AngularDrag: 1
   m_GravityScale: 1
@@ -1190,7 +1190,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.15541556
+  m_Distance: 0.23312339
   m_MaxDistanceOnly: 0
 --- !u!231 &1875410360557553646
 SpringJoint2D:
@@ -1209,9 +1209,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.14481382
+  m_Distance: 0.2172207
   m_DampingRatio: 0
-  m_Frequency: 3
+  m_Frequency: 5
 --- !u!231 &1875410360557553647
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -1229,7 +1229,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.15541556
+  m_Distance: 0.23312339
   m_DampingRatio: 0
   m_Frequency: 3
 --- !u!231 &1875410360557553644
@@ -1249,7 +1249,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.14958613
+  m_Distance: 0.22437915
   m_DampingRatio: 0
   m_Frequency: 3
 --- !u!114 &7748101223530137256
@@ -1293,7 +1293,7 @@ Transform:
   m_GameObject: {fileID: 1875410361018179834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.25, y: 1.11, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_Children:
   - {fileID: 1875410359772506690}
   - {fileID: 1875410360153950202}
@@ -1368,7 +1368,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 1
   m_AngularDrag: 1
   m_GravityScale: 1
@@ -1515,7 +1515,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 1
   m_AngularDrag: 1
   m_GravityScale: 1
@@ -1557,7 +1557,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.15211838
+  m_Distance: 0.22817756
   m_MaxDistanceOnly: 0
 --- !u!231 &1875410361103271051
 SpringJoint2D:
@@ -1576,9 +1576,9 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.16515945
+  m_Distance: 0.2477392
   m_DampingRatio: 0
-  m_Frequency: 3
+  m_Frequency: 5
 --- !u!231 &1875410361103271048
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -1596,7 +1596,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.15211838
+  m_Distance: 0.22817756
   m_DampingRatio: 0
   m_Frequency: 3
 --- !u!231 &1875410361103271049
@@ -1616,7 +1616,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.15711467
+  m_Distance: 0.2356719
   m_DampingRatio: 0
   m_Frequency: 3
 --- !u!114 &5581402005554117965
