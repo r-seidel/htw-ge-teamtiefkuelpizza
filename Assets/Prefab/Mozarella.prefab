@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1875410359355711032}
   - component: {fileID: 1875410359355711033}
   - component: {fileID: 1875410359355711038}
+  - component: {fileID: 5799621954288097866}
   m_Layer: 0
   m_Name: Point
   m_TagString: Untagged
@@ -204,6 +205,18 @@ SpringJoint2D:
   m_Distance: 0.15541556
   m_DampingRatio: 0
   m_Frequency: 3
+--- !u!114 &5799621954288097866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875410359355711036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be84e0a6456e6534b90b798f37342eb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1875410359772506698
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,6 +233,7 @@ GameObject:
   - component: {fileID: 1875410359772506694}
   - component: {fileID: 1875410359772506695}
   - component: {fileID: 1875410359772506692}
+  - component: {fileID: 3494565788349616128}
   m_Layer: 0
   m_Name: Point
   m_TagString: Untagged
@@ -408,6 +422,18 @@ SpringJoint2D:
   m_Distance: 0.15211838
   m_DampingRatio: 0
   m_Frequency: 3
+--- !u!114 &3494565788349616128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875410359772506698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be84e0a6456e6534b90b798f37342eb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1875410360072662476
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,6 +629,7 @@ GameObject:
   - component: {fileID: 1875410360153950206}
   - component: {fileID: 1875410360153950207}
   - component: {fileID: 1875410360153950204}
+  - component: {fileID: 7394721921149122501}
   m_Layer: 0
   m_Name: Point
   m_TagString: Untagged
@@ -791,6 +818,18 @@ SpringJoint2D:
   m_Distance: 0.14669695
   m_DampingRatio: 0
   m_Frequency: 3
+--- !u!114 &7394721921149122501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875410360153950178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be84e0a6456e6534b90b798f37342eb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1875410360511182624
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,6 +846,7 @@ GameObject:
   - component: {fileID: 1875410360511182652}
   - component: {fileID: 1875410360511182653}
   - component: {fileID: 1875410360511182626}
+  - component: {fileID: 4854150535045377930}
   m_Layer: 0
   m_Name: Point
   m_TagString: Untagged
@@ -995,6 +1035,18 @@ SpringJoint2D:
   m_Distance: 0.1600031
   m_DampingRatio: 0
   m_Frequency: 3
+--- !u!114 &4854150535045377930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875410360511182624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be84e0a6456e6534b90b798f37342eb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1875410360557553618
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,6 +1063,7 @@ GameObject:
   - component: {fileID: 1875410360557553646}
   - component: {fileID: 1875410360557553647}
   - component: {fileID: 1875410360557553644}
+  - component: {fileID: 7748101223530137256}
   m_Layer: 0
   m_Name: Point
   m_TagString: Untagged
@@ -1199,6 +1252,18 @@ SpringJoint2D:
   m_Distance: 0.14958613
   m_DampingRatio: 0
   m_Frequency: 3
+--- !u!114 &7748101223530137256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875410360557553618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be84e0a6456e6534b90b798f37342eb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1875410361018179834
 GameObject:
   m_ObjectHideFlags: 0
@@ -1365,6 +1430,7 @@ GameObject:
   - component: {fileID: 1875410361103271051}
   - component: {fileID: 1875410361103271048}
   - component: {fileID: 1875410361103271049}
+  - component: {fileID: 5581402005554117965}
   m_Layer: 0
   m_Name: Point
   m_TagString: Untagged
@@ -1553,3 +1619,15 @@ SpringJoint2D:
   m_Distance: 0.15711467
   m_DampingRatio: 0
   m_Frequency: 3
+--- !u!114 &5581402005554117965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875410361103271055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be84e0a6456e6534b90b798f37342eb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
