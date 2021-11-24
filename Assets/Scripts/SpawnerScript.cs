@@ -35,7 +35,8 @@ public class SpawnerScript : MonoBehaviour
         // Let loose the current previewed item
         if(timer >= 2.5 && preview)
         {
-            Destroy(drop.GetComponent<FixedJoint2D>());
+            drop.GetComponent<Rigidbody2D>().velocity = Vector3.zero; // no sideways speed
+            Destroy(drop.GetComponent<FixedJoint2D>()); // drop it
             preview = false;
             Score.score++;
             drop = bundle.Pop();
