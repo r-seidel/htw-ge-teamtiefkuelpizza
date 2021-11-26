@@ -15,11 +15,11 @@ public class MovementScript : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetButtonDown("RotateRight"))
         {
             GetComponent<SpawnerScript>().gameObject.transform.Rotate(0, 0, 90);
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetButtonDown("RotateLeft"))
         {
             GetComponent<SpawnerScript>().gameObject.transform.Rotate(0, 0, -90);
         }

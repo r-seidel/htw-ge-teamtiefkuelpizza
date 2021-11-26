@@ -163,6 +163,7 @@ MonoBehaviour:
   - {fileID: 1228491037836053024, guid: f5d6c7bb54d2cea4aa7a51392c712151, type: 3}
   - {fileID: 4438817068271014065, guid: b38a58b038f9985449b518bf7f8b7a8c, type: 3}
   - {fileID: 1875410361018179834, guid: 3a5c62be2aa60a540ade1d484d0f5818, type: 3}
+  dropContainer: {fileID: 797677171}
 --- !u!4 &398213399
 Transform:
   m_ObjectHideFlags: 0
@@ -527,6 +528,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1366223268893228229, guid: bad4badbe0e23864f9b134009b105e2f, type: 3}
   m_PrefabInstance: {fileID: 1356032432}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &797677171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 797677172}
+  m_Layer: 0
+  m_Name: DropContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &797677172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797677171}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &858837169
 GameObject:
   m_ObjectHideFlags: 0
