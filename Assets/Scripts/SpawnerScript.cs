@@ -33,7 +33,7 @@ public class SpawnerScript : MonoBehaviour
         timer += Time.deltaTime;
         
 
-        // Let loose the current previewed item
+        // drop the current previewed item
         if(timer >= 2.5 && preview)
         {
             drop.GetComponent<Rigidbody2D>().velocity = Vector3.zero; // no sideways speed
@@ -44,6 +44,7 @@ public class SpawnerScript : MonoBehaviour
             drop = bundle.Pop();
         }
 
+        // reset timer and spawn new item
         if(timer >= coolDown)
         {
             timer = 0;
