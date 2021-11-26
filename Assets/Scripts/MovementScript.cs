@@ -29,11 +29,11 @@ public class MovementScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W))
         {
-            GetComponent<SpawnerScript>().getDrop().transform.Rotate(0, 0, 90);
+            GetComponent<SpawnerScript>().gameObject.transform.Rotate(0, 0, 90);
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
-            GetComponent<SpawnerScript>().getDrop().transform.Rotate(0, 0, -90);
+            GetComponent<SpawnerScript>().gameObject.transform.Rotate(0, 0, -90);
         }
         
     }

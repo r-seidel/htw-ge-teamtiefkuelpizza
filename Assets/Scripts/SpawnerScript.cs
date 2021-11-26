@@ -14,6 +14,7 @@ public class SpawnerScript : MonoBehaviour
 
     private Stack<GameObject> bundle = new Stack<GameObject>();
     private Stack<GameObject> nextBundle = new Stack<GameObject>();
+    public GameObject dropContainer;
 
     
 
@@ -37,6 +38,7 @@ public class SpawnerScript : MonoBehaviour
         {
             drop.GetComponent<Rigidbody2D>().velocity = Vector3.zero; // no sideways speed
             Destroy(drop.GetComponent<FixedJoint2D>()); // drop it
+            drop.transform.parent = dropContainer.transform;
             preview = false;
             Score.score++;
             drop = bundle.Pop();
