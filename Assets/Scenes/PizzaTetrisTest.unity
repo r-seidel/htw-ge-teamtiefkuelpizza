@@ -162,7 +162,7 @@ MonoBehaviour:
   - {fileID: 8558637139137993673, guid: ae042b8921b2dee40b359d5619ca7272, type: 3}
   - {fileID: 1228491037836053024, guid: f5d6c7bb54d2cea4aa7a51392c712151, type: 3}
   - {fileID: 4438817068271014065, guid: b38a58b038f9985449b518bf7f8b7a8c, type: 3}
-  coolDown: 1.74
+  - {fileID: 1875410361018179834, guid: 3a5c62be2aa60a540ade1d484d0f5818, type: 3}
 --- !u!4 &398213399
 Transform:
   m_ObjectHideFlags: 0
@@ -520,7 +520,7 @@ Transform:
   - {fileID: 569548043}
   - {fileID: 906603572}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &569548043 stripped
 Transform:
@@ -607,7 +607,7 @@ Transform:
   m_LocalScale: {x: 0.88589, y: 0.88589, z: 0.17717801}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &906603572 stripped
 Transform:
@@ -1217,5 +1217,5 @@ Transform:
   m_LocalScale: {x: 0.25329015, y: 0.04115965, z: 0.25329015}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -6,28 +6,60 @@ using UnityEngine;
 public class SpawnerScript : MonoBehaviour
 {
     public GameObject[] drops;
-    public float coolDown = 5f;
-    private float timer = 0f;
+    GameObject drop;
+
+    private float coolDown = 3;
+    private float timer = 0;
+    private bool preview = false;
 
     private Stack<GameObject> bundle = new Stack<GameObject>();
+    private Stack<GameObject> nextBundle = new Stack<GameObject>();
+    public GameObject dropContainer;
+
+    
+
+    void Start()
+    {
+        bundle = GetRandomStack(drops);
+        drop = bundle.Pop();
+        SpawnPrefab(drop);
+    }
+   
 
     // Update is called once per frame
     void Update()
     {
+        
         timer += Time.deltaTime;
+        
+
+        // drop the current previewed item
+        if(timer >= 2.5 && preview)
+        {
+            drop.GetComponent<Rigidbody2D>().velocity = Vector3.zero; // no sideways speed
+            Destroy(drop.GetComponent<FixedJoint2D>()); // drop it
+            drop.transform.parent = dropContainer.transform;
+            preview = false;
+            Score.score++;
+            drop = bundle.Pop();
+        }
+
+        // reset timer and spawn new item
         if(timer >= coolDown)
         {
-            timer = 0f;
-
-            if(bundle.Count == 0)
+            timer = 0;
+            
+            if (bundle.Count == 0)
             {
                 bundle = GetRandomStack(drops);
+                
             }
 
-            SpawnPrefab(bundle.Pop());
+            SpawnPrefab(drop);
         }
     }
     
+    /*
     //spawns random prefab from possible prefabs
     private void SpawnRandom()
     {
@@ -35,12 +67,15 @@ public class SpawnerScript : MonoBehaviour
         GameObject drop = Instantiate(drops[id], transform);
         Score.score++;
     }
+    */
 
     //spawns given prefab
     private void SpawnPrefab(GameObject go)
     {
-        GameObject drop = Instantiate(go, transform);
-        Score.score++;
+        drop = Instantiate(go, transform);
+        drop.AddComponent<FixedJoint2D>();
+        drop.GetComponent<FixedJoint2D>().connectedBody = this.GetComponent<Rigidbody2D>();
+        preview = true;
     }
 
     //returns a randomized stack from the given array
@@ -59,5 +94,8 @@ public class SpawnerScript : MonoBehaviour
         return new Stack<GameObject>(arr);
     }
 
-    
+    public GameObject getDrop()
+    {
+        return drop;
+    }
 }
