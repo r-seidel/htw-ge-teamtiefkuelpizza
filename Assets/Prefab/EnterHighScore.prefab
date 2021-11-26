@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 1335507450079097748}
   - component: {fileID: 7881638975642998133}
   - component: {fileID: 7542360938801271106}
+  - component: {fileID: -6169826578067493911}
   m_Layer: 0
   m_Name: EnterHighScore
   m_TagString: Untagged
@@ -153,6 +154,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &-6169826578067493911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953244764084714678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdf9e6aed2b11410d95fd016bd763634, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entryNameText: {fileID: 8415524486509119400}
+  entryScoreText: {fileID: 2388395959391736847}
 --- !u!1 &3803667786951099346
 GameObject:
   m_ObjectHideFlags: 0

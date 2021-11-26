@@ -82,7 +82,8 @@ namespace jim.Scoreboards
 
        foreach (ScoreboardEntryData highscore in savedScores.highscores)
        {
-           Instantiate(scoreboardEntryObject, highScoresHolderTransform).GetComponent<ScoreboardEntryUI>().Initialise(highscore);
+         GameObject go = Instantiate(scoreboardEntryObject, highScoresHolderTransform);
+           go.GetComponent<ScoreboardEntryUI>().Initialise(highscore);
        }
    }
 
@@ -94,13 +95,13 @@ namespace jim.Scoreboards
 
        using(StreamReader stream = new StreamReader(SavePath)){
            string json = stream.ReadToEnd();
-           //ScoreBoardSaveData save = JsonUtility.FromJson<ScoreBoardSaveData>(json);
-           /*if (save == null)
+           ScoreBoardSaveData save = JsonUtility.FromJson<ScoreBoardSaveData>(json);
+           if (save == null)
            {
                return new ScoreBoardSaveData();
            }else{
            return save;
-           }*/
+           }
              return JsonUtility.FromJson<ScoreBoardSaveData>(json);
        }
    }
@@ -113,6 +114,3 @@ namespace jim.Scoreboards
    }
 }
 }
-
-
-
