@@ -17,7 +17,6 @@ public class MovementScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W))
         {
-            print("keydown");
             GetComponent<SpawnerScript>().gameObject.transform.Rotate(0, 0, 90);
         }
         if (Input.GetKeyDown(KeyCode.S))
