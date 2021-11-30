@@ -11,7 +11,6 @@ public class Score : MonoBehaviour {
     public void Update()
     {
         scoreDisplay.GetComponent<Text>().text = "Score: " + score;
-        lifesDisplay.GetComponent<Text>().text = "Reamining Lifes: " + lifes;
     }
 
 }
