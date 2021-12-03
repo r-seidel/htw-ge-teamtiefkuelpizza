@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Shake
   - shakeDeath
+  - zutat
+  - ingredient
+  - fireLight
   layers:
   - Default
   - TransparentFX

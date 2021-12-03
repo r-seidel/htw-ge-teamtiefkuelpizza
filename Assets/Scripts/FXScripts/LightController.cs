@@ -5,9 +5,11 @@ using UnityEngine;
 public class LightController : MonoBehaviour
 {
     public Light fireLight;
-public bool isBurning = false;
+    public bool isBurning = false;
     public float timeDelay;
     float startTime;
+    public Animator intensityAnim;
+
 
     public bool changeRange = false;
     public float maxRange = 20.0f;
@@ -48,17 +50,19 @@ public bool isBurning = false;
         if (changeColor) {
             float t = (Mathf.Sin(Time.time - startTime * colorSpeed));
             fireLight.color = Color.Lerp(startColor, endColor, t);
-        }
-
-
-        
-        if (isBurning == false)
+        } if (isBurning == false)
         {
             StartCoroutine(FireLight());
         }
         
         
     }
+public void LightFireIntensity(){
+        intensityAnim.SetTrigger("trFireLight");
+        Debug.Log("fireLight");
+    
+}
+
     IEnumerator FireLight() {
         isBurning = true;
         //turn off light
