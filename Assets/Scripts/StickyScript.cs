@@ -6,7 +6,6 @@ public class StickyScript : MonoBehaviour
 {
     void OnCollisionEnter(Collision col)
     {
-        print("Stick"); 
         // creates joint
         FixedJoint joint = gameObject.AddComponent<FixedJoint>();
         // sets joint position to point of contact
