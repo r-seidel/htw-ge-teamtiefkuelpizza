@@ -77,6 +77,7 @@ public class SpawnerScript : MonoBehaviour
         preview = true;
     }
 
+    //
     private void addJoint(GameObject drop)
     {
         drop.AddComponent<FixedJoint2D>();
