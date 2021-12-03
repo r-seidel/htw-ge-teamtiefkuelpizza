@@ -58,16 +58,6 @@ public class SpawnerScript : MonoBehaviour
             SpawnPrefab(drop);
         }
     }
-    
-    /*
-    //spawns random prefab from possible prefabs
-    private void SpawnRandom()
-    {
-        int id = Random.Range(0, drops.Length);
-        GameObject drop = Instantiate(drops[id], transform);
-        Score.score++;
-    }
-    */
 
     //spawns given prefab
     private void SpawnPrefab(GameObject go)
@@ -77,15 +67,38 @@ public class SpawnerScript : MonoBehaviour
         preview = true;
     }
 
-    //
+    // adding Joint(s)
     private void addJoint(GameObject drop)
     {
-        drop.AddComponent<FixedJoint2D>();
-        drop.GetComponent<FixedJoint2D>().connectedBody = this.GetComponent<Rigidbody2D>();
+        drop.AddComponent<FixedJoint2D>(); // create joint
+        drop.GetComponent<FixedJoint2D>().connectedBody = this.GetComponent<Rigidbody2D>(); // attach joint
+
+        if (drop.transform.childCount == 0) return; // if not mozarella -> return | else create more joints, so the mozarella doesnt glitch
+
+        for(int i = 0; i<=drop.transform.childCount; i++) // for each child
+        {
+            GameObject child = drop.transform.GetChild(i).gameObject;
+            if (child.name.Equals("Skin")) break; // check if point or skin
+            child.AddComponent<FixedJoint2D>(); // create joint
+            child.GetComponent<FixedJoint2D>().connectedBody = this.GetComponent<Rigidbody2D>(); // attach joint
+        }
     }
 
-    private void removeJoint(GameObject drop) {
-        Destroy(drop.GetComponent<FixedJoint2D>());
+    // removing Joint(s)
+    private void removeJoint(GameObject drop) 
+    {
+        Destroy(drop.GetComponent<FixedJoint2D>()); // destroy / let it fall
+
+        if (drop.transform.childCount == 0) return; // if not mozarella -> return
+
+        for (int i = 0; i <= drop.transform.childCount; i++) // for each child
+        {
+            GameObject child = drop.transform.GetChild(i).gameObject;
+
+            if (child.name.Equals("Skin")) break; // check if point or skin
+
+            Destroy(child.GetComponent<FixedJoint2D>()); // destroy / let it fall
+        }
     }
 
     //returns a randomized stack from the given array
