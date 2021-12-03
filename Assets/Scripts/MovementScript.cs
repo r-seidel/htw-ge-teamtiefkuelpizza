@@ -5,9 +5,29 @@ using UnityEngine;
 public class MovementScript : MonoBehaviour
 {
     public float speed = 1f;
-    // Start is called before the first frame update
-    void Start()
+
+    private Vector2 initialPosition;
+    private Vector2 mousePosition;
+
+    private float deltaX;
+
+    private void Start()
     {
+        initialPosition = transform.position;
+    }
+
+    void OnMouseDown()
+    {
+
+        deltaX = Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transform.position.x;
+
+    }
+
+    void OnMouseDrag()
+    {
+
+        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.position = new Vector3(mousePosition.x - deltaX, transform.position.y, transform.position.z);
 
     }
 

@@ -20,7 +20,7 @@ public class LightController : MonoBehaviour
 
 
     //float randomRange = Random.Range(0, 5);
-  public float randomSpeed = Random.Range(5.0f, 10.0f);
+  public float randomSpeed;
     //loat randomItensity = Random.Range(0, 3.0f);
 
 
@@ -33,6 +33,7 @@ public class LightController : MonoBehaviour
     public Color endColor;
 
     void Start () {
+        randomSpeed = Random.Range(5.0f, 10.0f);
         this.gameObject.GetComponent<Light>();
         startTime = Time.time;
     }
@@ -66,10 +67,10 @@ public void LightFireIntensity(){
     IEnumerator FireLight() {
         isBurning = true;
         //turn off light
-        this.gameObject.GetComponent<Light>().enabled = false;
+        //this.gameObject.GetComponent<Light>().enabled = false; TODO
         timeDelay = Random.Range(0.01f, 0.05f);
         yield return new WaitForSeconds(timeDelay);
-        this.gameObject.GetComponent<Light>().enabled = true;
+        //this.gameObject.GetComponent<Light>().enabled = true; TODO
         timeDelay = Random.Range(0.01f, 1.55f);
         yield return new WaitForSeconds(timeDelay);
         isBurning = false;

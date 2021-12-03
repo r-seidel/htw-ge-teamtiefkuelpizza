@@ -8,11 +8,11 @@ public class DeathTriggerScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        shake.CamShakeDeath();
-        intensityAnim.LightFireIntensity();
+        //shake.CamShakeDeath();
+        //intensityAnim.LightFireIntensity();   TODO: fix
         //fireSound.Play();
         Debug.Log("Collision Deathtrigger");
-        fireSound.Play();
+        //fireSound.Play();
 
         Destroy(collision.gameObject);
         missed.GetComponent<LifeScript>().RemoveLife();

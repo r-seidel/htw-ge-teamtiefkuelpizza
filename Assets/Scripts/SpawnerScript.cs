@@ -37,7 +37,7 @@ public class SpawnerScript : MonoBehaviour
         if(timer >= 2.5 && preview)
         {
             drop.GetComponent<Rigidbody2D>().velocity = Vector3.zero; // no sideways speed
-            Destroy(drop.GetComponent<FixedJoint2D>()); // drop it
+            removeJoint(drop); // drop it
             drop.transform.parent = dropContainer.transform;
             preview = false;
             Score.score++;

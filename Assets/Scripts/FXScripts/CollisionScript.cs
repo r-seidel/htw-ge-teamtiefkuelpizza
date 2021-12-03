@@ -31,17 +31,17 @@ public class CollisionScript : MonoBehaviour
 
     //private void OnCollisionEnter(Collision collision){
         Debug.Log("Collision Prefabs on Pizza");
-        collisionSound.Play();
+       // collisionSound.Play(); TODO
         //effect.Play();
-        shake.CamShakeHit();
+        //shake.CamShakeHit(); TODO
         //effect.transform.position = this.transform.position; 
         //effect.Play();
 
         }
       void OnCollisionEnter2D(Collision2D col) {
           if (col.gameObject.tag == "ingredient") {
-                collisionSound2.Play();
-                shake.CamShakeSoft();
+       //         collisionSound2.Play();
+       //         shake.CamShakeSoft();
 
               Debug.Log("Collision Prefabs");
           }

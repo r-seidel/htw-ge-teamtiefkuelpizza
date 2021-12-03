@@ -92,12 +92,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140283351981744553}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8c75fd436b120848a00b39e0452b487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   collisionSound: {fileID: 0}
+  collisionSound2: {fileID: 0}
   shake: {fileID: 0}
 --- !u!50 &6851908805321857701
 Rigidbody2D:
