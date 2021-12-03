@@ -37,7 +37,7 @@ public class SpawnerScript : MonoBehaviour
         if(timer >= 2.5 && preview)
         {
             drop.GetComponent<Rigidbody2D>().velocity = Vector3.zero; // no sideways speed
-            Destroy(drop.GetComponent<FixedJoint2D>()); // drop it
+            removeJoint(drop); // drop it
             drop.transform.parent = dropContainer.transform;
             preview = false;
             Score.score++;
@@ -73,9 +73,18 @@ public class SpawnerScript : MonoBehaviour
     private void SpawnPrefab(GameObject go)
     {
         drop = Instantiate(go, transform);
+        addJoint(drop);
+        preview = true;
+    }
+
+    private void addJoint(GameObject drop)
+    {
         drop.AddComponent<FixedJoint2D>();
         drop.GetComponent<FixedJoint2D>().connectedBody = this.GetComponent<Rigidbody2D>();
-        preview = true;
+    }
+
+    private void removeJoint(GameObject drop) {
+        Destroy(drop.GetComponent<FixedJoint2D>());
     }
 
     //returns a randomized stack from the given array
