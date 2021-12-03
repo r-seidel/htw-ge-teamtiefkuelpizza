@@ -4,22 +4,7 @@ using UnityEngine;
 
 public class DeathTriggerScript : MonoBehaviour
 {
-
-    // added by Max
-    //private FireScale fireScale;
-    private Shake shake;
-    private Light fireLight;
-    private LightController intensityAnim;
-    public AudioSource fireSound;
-    //private FireSound fireSound;
-
-    
-    private void Start(){
-    shake = GameObject.FindGameObjectWithTag("shakeDeath").GetComponent<Shake>();
-    intensityAnim = GameObject.FindGameObjectWithTag("fireLight").GetComponent<LightController>();
-    fireSound = GameObject.Find("objDeath01").GetComponent<AudioSource>();
-
-    }
+    public GameObject missed;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -30,7 +15,7 @@ public class DeathTriggerScript : MonoBehaviour
         fireSound.Play();
 
         Destroy(collision.gameObject);
-        Score.lifes--;
+        missed.GetComponent<LifeScript>().RemoveLife();
         Score.score--;
     }
 }
