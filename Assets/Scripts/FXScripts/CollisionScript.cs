@@ -42,8 +42,6 @@ public class CollisionScript : MonoBehaviour
           if (col.gameObject.tag == "ingredient") {
        //         collisionSound2.Play();
        //         shake.CamShakeSoft();
-
-              Debug.Log("Collision Prefabs");
           }
       }
 
