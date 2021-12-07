@@ -430,6 +430,7 @@ GameObject:
   - component: {fileID: 415475757}
   - component: {fileID: 415475756}
   - component: {fileID: 415475755}
+  - component: {fileID: 415475758}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -502,6 +503,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &415475758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415475754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a992081467c1ca4782c95dd828c002e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DropContainer: {fileID: 797677171}
+  Spawner: {fileID: 398213397}
 --- !u!1 &441261519
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,7 +723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8c75fd436b120848a00b39e0452b487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionSound: {fileID: 1919335683}
+  collisionSound: {fileID: 0}
   collisionSound2: {fileID: 0}
   shake: {fileID: 0}
 --- !u!50 &449063198
@@ -1236,7 +1251,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 982695810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.39932, y: -5.11, z: 0}
+  m_LocalPosition: {x: 0.39932, y: -6.52, z: 0}
   m_LocalScale: {x: 49.93706, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1254,10 +1269,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1484350a78038d64db7b38ba3f952bfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireLight: {fileID: 652652435}
+  fireLight: {fileID: 0}
   isBurning: 0
   timeDelay: 0
-  intensityAnim: {fileID: 652652438}
+  intensityAnim: {fileID: 0}
   changeRange: 0
   maxRange: 20
   rangeSpeed: 1
@@ -1767,7 +1782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85554b3e2b00e894cacaeb69cf253f61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camAnimator: {fileID: 415475758}
+  camAnimator: {fileID: 0}
 --- !u!4 &1536254578
 Transform:
   m_ObjectHideFlags: 0

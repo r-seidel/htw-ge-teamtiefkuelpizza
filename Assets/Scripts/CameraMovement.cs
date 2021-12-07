@@ -16,6 +16,7 @@ public class CameraMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // minumum heights for both camera and spawner
         standardHeight = this.transform.position.y;
         SpawnerHeight = Spawner.transform.position.y;
     }
@@ -30,7 +31,7 @@ public class CameraMovement : MonoBehaviour
         float height = (float) (amount * 0.05); // we need more height
 
         Vector3 nextPosition = new Vector3(0, standardHeight + height, -10); // this will be next camera position
-        Vector3 spawnerPosition = new Vector3(0, SpawnerHeight + height, 0); // next spawner position (if you dont want the hand to lerp back to x = 0 -> Spawner.transform.position.x)
+        Vector3 spawnerPosition = new Vector3(Spawner.transform.position.x, SpawnerHeight + height, 0); // next spawner position 
 
         float nextSize = (5 + height/2); // this will be next camera orthographic size
 
