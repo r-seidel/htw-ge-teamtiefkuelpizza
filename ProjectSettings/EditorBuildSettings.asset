@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 071370d8304714c6582b9bd36185b39b
   - enabled: 1
-    path: Assets/Scenes/Richard Changes.unity
+    path: Assets/Scenes/PizzaTetrisTest.unity
     guid: 50ee10d18776ba34a9b9a9df4df74845
   m_configObjects: {}
