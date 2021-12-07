@@ -470,6 +470,7 @@ GameObject:
   - component: {fileID: 398213401}
   - component: {fileID: 398213403}
   - component: {fileID: 398213405}
+  - component: {fileID: 398213402}
   m_Layer: 3
   m_Name: Spawner
   m_TagString: Untagged
@@ -505,7 +506,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398213397}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.6500003, y: -1.1300001, z: -0.066293}
+  m_LocalPosition: {x: -3.88, y: -1.1300001, z: -0.066293}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1912777604}
@@ -545,6 +546,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &398213402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398213397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78579e9425e20e4e8c01e210c0df29b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highVector: {x: 10, y: Infinity, z: Infinity}
+  lowVector: {x: -10, y: -Infinity, z: -Infinity}
 --- !u!114 &398213403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2155,7 +2170,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543592594}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.3199997, y: 0.4499998, z: 0.023707002}
+  m_LocalPosition: {x: 7.07, y: 0.4499998, z: 0.023707002}
   m_LocalScale: {x: 0.42586, y: 0.42586, z: 0.42586}
   m_Children: []
   m_Father: {fileID: 1912777604}
@@ -2706,7 +2721,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912777603}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.6500003, y: 3.63, z: 0.066293}
+  m_LocalPosition: {x: 3.63, y: 3.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 398213399}
