@@ -8,6 +8,11 @@ public class Score : MonoBehaviour {
     public static int score = 0;
     public static int lifes = 5;
 
+
+    private void Start()
+    {
+        score = 0;
+    }
     public void Update()
     {
         scoreDisplay.GetComponent<Text>().text = "Score: " + score;
