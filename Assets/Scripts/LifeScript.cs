@@ -5,6 +5,7 @@ using UnityEngine;
 public class LifeScript : MonoBehaviour
 {
     public GameObject[] lifes;
+    public GameObject deathScreen;
     private int lifeAmount;
 
     private void Start()
@@ -25,7 +26,6 @@ public class LifeScript : MonoBehaviour
 
     public void Lose()
     {
-        //TODO: Integrate Lose
-        lifeAmount = 3;
+        deathScreen.SetActive(true);
     }
 }

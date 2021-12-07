@@ -121,4 +121,9 @@ public class SpawnerScript : MonoBehaviour
     {
         return drop;
     }
+
+    public void ResetBundle()
+    {
+        bundle = GetRandomStack(drops);
+    }
 }
