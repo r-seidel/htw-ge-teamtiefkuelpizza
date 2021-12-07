@@ -6,15 +6,9 @@ public class MovementScript : MonoBehaviour
 {
     public float speed = 1f;
 
-    private Vector2 initialPosition;
     private Vector2 mousePosition;
 
     private float deltaX;
-
-    private void Start()
-    {
-        initialPosition = transform.position;
-    }
 
     void OnMouseDown()
     {
@@ -34,7 +28,6 @@ public class MovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (Input.GetButtonDown("RotateRight"))
         {
             GetComponent<SpawnerScript>().gameObject.transform.Rotate(0, 0, 90);
@@ -50,11 +43,11 @@ public class MovementScript : MonoBehaviour
     {
         if (Input.GetAxis("Horizontal") > 0)
         {
-            GetComponent<Rigidbody2D>().MovePosition(new Vector2(transform.position.x + speed * Time.deltaTime, transform.position.y));
+            transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, transform.position.y);
         }
         if (Input.GetAxis("Horizontal") < 0)
         {
-            GetComponent<Rigidbody2D>().MovePosition(new Vector2(transform.position.x - speed * Time.deltaTime, transform.position.y));
+            transform.position = new Vector2(transform.position.x - speed * Time.deltaTime, transform.position.y);
         }
         if (Input.GetAxis("Horizontal") == 0)
         {
