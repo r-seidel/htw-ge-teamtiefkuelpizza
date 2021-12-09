@@ -23,38 +23,38 @@ public class CollisionScript : MonoBehaviour
       void OnCollisionEnter2D(Collision2D col) {
 
         //Start Playing Music first Touch
-       
+        
 
-          RndNumber = Random.Range(0,3);
-          if (col.gameObject.tag == "ingredient") {
-            
-              
-              
-              if (RndNumber == 0 && !hasCollided) FindObjectOfType<AudioManager>().Play("audioHitSoft");
-              if (RndNumber == 1 && !hasCollided) FindObjectOfType<AudioManager>().Play("audioHitSoft");
-                if (RndNumber == 2 && !hasCollided) FindObjectOfType<AudioManager>().Play("audioHitSoft2");
-                if (RndNumber == 3 && !hasCollided) FindObjectOfType<AudioManager>().Play("audioHitSoft3");
-                if(!hasCollided) Instantiate(dropsEffectWhite, transform.position, Quaternion.identity);
-
-            Instantiate(dropsEffectRed,transform.position, Quaternion.identity);
-                      StartCoroutine(cameraShake.Shake(.15f, 0.005f,0.02f));
-            
-            StartCoroutine(cameraShake.Shake(.15f, 0.005f, 0.02f));
+        RndNumber = Random.Range(0,3);
+          if (col.gameObject.tag == "ingredient" && hasCollided == false) {
             hasCollided = true;
-            Debug.Log("Collision Prefabs");
-          }
-           if (col.gameObject.tag == "pizzaBase") {
-            
-            
-                if(!hasCollided) Instantiate(dropsEffectRed,transform.position, Quaternion.identity);
-                if (RndNumber == 0 && !hasCollided) FindObjectOfType<AudioManager>().Play("audioDropWet");
-                if (RndNumber == 1 && !hasCollided) FindObjectOfType<AudioManager>().Play("audioDropWet");
-                if (RndNumber == 2 && !hasCollided) FindObjectOfType<AudioManager>().Play("audioDropWet2");
-                if (RndNumber == 3 && !hasCollided) FindObjectOfType<AudioManager>().Play("audioDropWet3");
-            
-            StartCoroutine(cameraShake.Shake(.15f, 0.05f, 0.1f));
-            Debug.Log("Collision PizzaBase");
+              Instantiate(dropsEffectWhite,transform.position, Quaternion.identity);
+             
+              if (RndNumber == 0) FindObjectOfType<AudioManager>().Play("audioHitSoft");
+              if (RndNumber == 1) FindObjectOfType<AudioManager>().Play("audioHitSoft");
+                if (RndNumber == 2) FindObjectOfType<AudioManager>().Play("audioHitSoft2");
+                if (RndNumber == 3) FindObjectOfType<AudioManager>().Play("audioHitSoft3");
 
+
+                      Instantiate(dropsEffectRed,transform.position, Quaternion.identity);
+                      StartCoroutine(cameraShake.Shake(.15f, 0.005f,0.02f));
+
+
+            
+              Debug.Log("Collision Prefabs");
           }
-      }    
+           if (col.gameObject.tag == "pizzaBase" && hasCollided == false) {
+              
+               hasCollided = true;
+                Instantiate(dropsEffectRed,transform.position, Quaternion.identity);
+                if (RndNumber == 0) FindObjectOfType<AudioManager>().Play("audioDropWet");
+                if (RndNumber == 1) FindObjectOfType<AudioManager>().Play("audioDropWet");
+                if (RndNumber == 2) FindObjectOfType<AudioManager>().Play("audioDropWet2");
+                if (RndNumber == 3) FindObjectOfType<AudioManager>().Play("audioDropWet3");
+                      
+            
+              Debug.Log("Collision PizzaBase");
+          }
+        StartCoroutine(cameraShake.Shake(.15f, 0.005f, 0.02f));
+    }    
 }
