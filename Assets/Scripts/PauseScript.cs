@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class PauseScript : MonoBehaviour
 {
     private bool paused = false;
-    private object GameManagment;
+    public GameObject Spawner;
 
     void Update()
     {
@@ -21,14 +21,16 @@ public class PauseScript : MonoBehaviour
     private void resume()
     {
         paused = false;
-        Time.timeScale = 1f;
+        Spawner.GetComponent<SpawnerScript>().paused = false;
         transform.Find("PauseScreen").gameObject.SetActive(false);
+        Time.timeScale = 1.0f;
     }
 
     private void pause()
     {
         paused = true;
-        Time.timeScale = 0f;
+        Spawner.GetComponent<SpawnerScript>().paused = true;
+        Time.timeScale = 0;
         transform.Find("PauseScreen").gameObject.SetActive(true);
     }
 

@@ -11,6 +11,7 @@ public class SpawnerScript : MonoBehaviour
     private float coolDown = 3;
     private float timer = 0;
     private bool preview = false;
+    public bool paused = false;
 
     private Stack<GameObject> bundle = new Stack<GameObject>();
     private Stack<GameObject> nextBundle = new Stack<GameObject>();
@@ -28,7 +29,7 @@ public class SpawnerScript : MonoBehaviour
 
 
     }
-   
+
 
     // Update is called once per frame
     void Update()
