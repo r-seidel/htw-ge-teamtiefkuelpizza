@@ -92,14 +92,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7145434035835652802}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8c75fd436b120848a00b39e0452b487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionSound: {fileID: 0}
-  collisionSound2: {fileID: 0}
-  shake: {fileID: 0}
+  dropsEffectRed: {fileID: 5782217547697014084, guid: 6690eb785782da04fa60135bcae0a299, type: 3}
+  dropsEffectWhite: {fileID: 1439489956303772615, guid: 2d802c017876f374ab7ec453c404d26a, type: 3}
+  cameraShake: {fileID: 0}
+  hasCollided: 0
+  RndNumber: 1
 --- !u!50 &6172816448851120007
 Rigidbody2D:
   serializedVersion: 4

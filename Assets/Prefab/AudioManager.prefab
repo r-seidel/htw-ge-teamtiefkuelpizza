@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7483157608278768583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7483157608278768581}
+  - component: {fileID: 7483157608278768582}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7483157608278768581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7483157608278768583}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.63800573, y: -1.430666, z: -1.834571}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7483157608278768582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7483157608278768583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b0dbec78b5c14449bd3c5eb1b8c55c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: RestaurantBackground
+    clip: {fileID: 8300000, guid: 56f3e49d9a4f1d84799ae520f880b64b, type: 3}
+    volume: 0.005
+    pitch: 0
+    source: {fileID: 0}
+  - name: removedlife01
+    clip: {fileID: 8300000, guid: 2bbe4c77e4712884797f4c2e1b3a2551, type: 3}
+    volume: 0.957
+    pitch: 1
+    source: {fileID: 0}
+  - name: audioDrop
+    clip: {fileID: 8300000, guid: 09897cdcaf2dfb74d984e1b45c7e5a13, type: 3}
+    volume: 0.957
+    pitch: 1
+    source: {fileID: 0}
+  - name: audioDropWet
+    clip: {fileID: 8300000, guid: 0201c0b808979db4a8bdb3b7aeff167e, type: 3}
+    volume: 0.957
+    pitch: 1
+    source: {fileID: 0}
+  - name: audioHitSoft
+    clip: {fileID: 8300000, guid: 63a66333f0a187f4e91901949dd94413, type: 3}
+    volume: 0.957
+    pitch: 1
+    source: {fileID: 0}
+  - name: audioHeartBeat
+    clip: {fileID: 8300000, guid: 1fad98b2b5525f647bf08e71e6caa4a8, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: removedlife02
+    clip: {fileID: 8300000, guid: 17f9f94c6780a7e469a01631c729a686, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: removedlife03
+    clip: {fileID: 8300000, guid: f5acdf122116bae40bc6de80723ae0ef, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: audioHitSoft2
+    clip: {fileID: 8300000, guid: 3e469d065d509b447bcf5bdd8155fe47, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: audioHitSoft3
+    clip: {fileID: 8300000, guid: 3c85c173bdbc59846a8778f7eed1dbf5, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: audioFire
+    clip: {fileID: 8300000, guid: 664c5056cea4b9043ba7c0bfc35eb595, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: audioDropWet2
+    clip: {fileID: 8300000, guid: f30dcb38ddabdde4fa352d02a0ceb3db, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: audioDropWet3
+    clip: {fileID: 8300000, guid: bd14be154d43dae4193698e2deb4ec24, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}

@@ -9,6 +9,7 @@ TagManager:
   - zutat
   - ingredient
   - fireLight
+  - pizzaBase
   layers:
   - Default
   - TransparentFX

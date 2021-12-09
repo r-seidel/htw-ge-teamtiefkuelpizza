@@ -23,6 +23,9 @@ public class SpawnerScript : MonoBehaviour
         bundle = GetRandomStack(drops);
         drop = bundle.Pop();
         SpawnPrefab(drop);
+
+
+
     }
    
 
@@ -42,6 +45,10 @@ public class SpawnerScript : MonoBehaviour
             preview = false;
             Score.score++;
             drop = bundle.Pop();
+            if (Score.score == 1){
+                FindObjectOfType<AudioManager>().Play("music");
+
+        }
         }
 
         // reset timer and spawn new item
