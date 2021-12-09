@@ -33,7 +33,7 @@ public class DeathTriggerScript : MonoBehaviour
         if (RndNumber == 1) FindObjectOfType<AudioManager>().Play("removedlife01");
         if (RndNumber == 2) FindObjectOfType<AudioManager>().Play("removedlife02");
         if (RndNumber == 3) FindObjectOfType<AudioManager>().Play("removedlife03");
-        //StartCoroutine(cameraShake.Shake(.15f, 0.01f,0.01f));
+        StartCoroutine(cameraShake.Shake(.5f, 0.02f,0.05f));
         Score.score--;
     }
 }
