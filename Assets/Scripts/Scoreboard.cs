@@ -6,6 +6,7 @@ using System.IO;
 
 namespace jim.Scoreboards
 {
+   
     public class Scoreboard : MonoBehaviour
 {
    [SerializeField] private int maxScoreboardEntries = 5; 
@@ -21,7 +22,7 @@ namespace jim.Scoreboards
 
    private string SavePath => $"{Application.persistentDataPath}/highscores.json";
 
-   private void start(){
+   void Start(){
        ScoreBoardSaveData savedScores = GetSavedScores();
        UpdateUI(savedScores);
 
