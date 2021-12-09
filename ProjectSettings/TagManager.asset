@@ -10,6 +10,7 @@ TagManager:
   - ingredient
   - fireLight
   - pizzaBase
+  - MusicPlayer
   layers:
   - Default
   - TransparentFX

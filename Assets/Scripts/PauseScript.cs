@@ -15,7 +15,7 @@ public class PauseScript : MonoBehaviour
 
     private void quit()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(0);
     }
 
     private void resume()

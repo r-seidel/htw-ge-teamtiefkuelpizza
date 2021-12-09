@@ -12,7 +12,7 @@ public class DeathTriggerScript : MonoBehaviour
    public int RndNumber;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
+        Score.score--;
         RndNumber = Random.Range(1,3);
         //shake.CamShakeDeath();
         //intensityAnim.LightFireIntensity();   TODO: fix
@@ -34,7 +34,6 @@ public class DeathTriggerScript : MonoBehaviour
         if (RndNumber == 2) FindObjectOfType<AudioManager>().Play("removedlife02");
         if (RndNumber == 3) FindObjectOfType<AudioManager>().Play("removedlife03");
         StartCoroutine(cameraShake.Shake(.5f, 0.02f,0.05f));
-        Score.score--;
     }
 }
  
