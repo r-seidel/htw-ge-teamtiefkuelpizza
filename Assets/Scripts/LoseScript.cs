@@ -11,7 +11,5 @@ public class LoseScript : MonoBehaviour
     {
         spawner.GetComponent<MovementScript>().enabled = false;
         spawner.GetComponent<SpawnerScript>().enabled = false;
-
-        Time.timeScale = 0f;
     }
 }
