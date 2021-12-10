@@ -24,13 +24,15 @@ Nach dem man drei Zutaten hat fallen lassen beduetet das "Game Over". Nun wird d
 <img src="https://user-images.githubusercontent.com/77390016/145632850-aa1a3c7f-cad7-4a1f-9cd4-eaea7dd736c6.png", width=400>
 
 <h3>Weitere Features</h3>
-Das Spiel hat ein Hauptmenü, von dem man auch in ein Hilfe-Screen navigieren kann, welches einem nochmals das Spiel erklärt. Zudem passiert etwas "Interessantes" wenn man während des Spielens "crime" auf seiner Tastatur eingibt
+Das Spiel hat ein Hauptmenü, von dem man auch in ein Hilfe-Screen navigieren kann, welches einem nochmals das Spiel erklärt. Zudem passiert etwas "Interessantes" wenn man während des Spielens "crime" auf seiner Tastatur eingibt. Das Spiel kann außerdem jederzeit pausiert werden.
 <img src="https://user-images.githubusercontent.com/77390016/145633332-ebec47ef-397d-4f46-82c7-cfee4406fcaa.png", width=400>
 <img src="https://user-images.githubusercontent.com/77390016/145633681-65bfddae-7fd8-4063-a680-a429cd3f572c.png", width=400>
 
 <h2>Steuerung</h2>
 <h3>Tastatur</h3>
-WASD / Pfeiltasten - Hand bewegen und Zutaten drehen
+WASD / Pfeiltasten - Hand bewegen und Zutaten drehen<br>
+P - Pause<br>
+ESC - Zurück ins Hauptmenü
 <h3>Controller</h3>
 Joystick / Steuerkreuz - Hand bewegen <br>
 A & B / RB & LB - Zutaten drehen
