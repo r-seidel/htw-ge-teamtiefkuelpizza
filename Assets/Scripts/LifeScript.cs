@@ -28,4 +28,9 @@ public class LifeScript : MonoBehaviour
     {
         deathScreen.SetActive(true);
     }
+
+    public int getLife ()
+    {
+        return lifeAmount;
+    }
 }

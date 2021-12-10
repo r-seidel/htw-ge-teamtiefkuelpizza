@@ -12,7 +12,7 @@ public class DeathTriggerScript : MonoBehaviour
    public int RndNumber;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Score.score--;
+        if(missed.GetComponent<LifeScript>().getLife() >0) Score.score--;
         RndNumber = Random.Range(1,3);
         //shake.CamShakeDeath();
         //intensityAnim.LightFireIntensity();   TODO: fix
