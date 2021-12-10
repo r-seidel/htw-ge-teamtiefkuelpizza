@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class ActivateNextAnimScript : MonoBehaviour
 {
-    public GameObject next;
+    public GameObject[] next;
 
     public void EnableNextObject()
     {
-        next.SetActive(true);
+        foreach(GameObject go in next)
+        {
+            go.SetActive(true);
+        }
     }
 }

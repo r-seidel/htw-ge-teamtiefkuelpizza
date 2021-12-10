@@ -21,7 +21,7 @@ namespace jim.Scoreboards
 
    private string SavePath => $"{Application.persistentDataPath}/highscores.json";
 
-   private void start(){
+   private void Start(){
        ScoreBoardSaveData savedScores = GetSavedScores();
        UpdateUI(savedScores);
 
@@ -54,7 +54,7 @@ namespace jim.Scoreboards
            }*/
         
              //scoreboardEntryData.entryScore
-           if(testEntryScore > savedScores.highscores[i].entryScore){
+           if(scoreboardEntryData.entryScore > savedScores.highscores[i].entryScore){
                savedScores.highscores.Insert(i, scoreboardEntryData);
                scoreAdded = true;
                break;

@@ -11,9 +11,11 @@ public class SpawnerScript : MonoBehaviour
     private float coolDown = 3;
     private float timer = 0;
     private bool preview = false;
+    public bool paused = false;
 
     private Stack<GameObject> bundle = new Stack<GameObject>();
     private Stack<GameObject> nextBundle = new Stack<GameObject>();
+    private bool musicStarted = false;
     public GameObject dropContainer;
 
     
@@ -27,7 +29,7 @@ public class SpawnerScript : MonoBehaviour
 
 
     }
-   
+
 
     // Update is called once per frame
     void Update()
@@ -45,10 +47,12 @@ public class SpawnerScript : MonoBehaviour
             preview = false;
             Score.score++;
             drop = bundle.Pop();
-            if (Score.score == 1){
+            /*
+            if (Score.score == 1 && !musicStarted){
                 FindObjectOfType<AudioManager>().Play("music");
-
-        }
+                musicStarted = true;
+            }
+            */
         }
 
         // reset timer and spawn new item
