@@ -51,7 +51,7 @@ Lichter flackern im Hintergrund, um einen echten Brenneffekt zu simulieren.
 <h4>Audio FX</h4>
 Es gibt eine Reihe von Sounds, die bei unterschiedlichen Ereignissen abgespielt werden: Trifft die Zutat auf den Pizzaboden? Trifft die Zutat auf eine andere Zuatat? Fällt die Zutata ins Feuer? Hat der Spieler nur noch ein Leben? etc.
 <h4>Kamera-Wackeln</h4>
-Fällt eine Zutat in das Feuer, so wackelt die Kamera um verdeutlichen, dass etwas Schlechtes passiert ist.
+Fällt eine Zutat in das Feuer, so wackelt die Kamera um zu verdeutlichen, dass etwas Schlechtes passiert ist.
 
 <h2>Quellen und Credits</h2>
 Pilz Bild:<br>
