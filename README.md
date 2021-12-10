@@ -29,10 +29,11 @@ Das Spiel hat ein Hauptmenü, von dem man auch in ein Hilfe-Screen navigieren ka
 <img src="https://user-images.githubusercontent.com/77390016/145633681-65bfddae-7fd8-4063-a680-a429cd3f572c.png", width=400>
 
 <h2>Steuerung</h2>
-<h3>Tastatur</h3>
+<h3>Maus und Tastatur</h3>
+Click and Drag - Hand bewegen<br>
 WASD / Pfeiltasten - Hand bewegen und Zutaten drehen<br>
 P - Pause<br>
-ESC - Zurück ins Hauptmenü
+ESC - Zurück ins Hauptmenü<br>
 <h3>Controller</h3>
 Joystick / Steuerkreuz - Hand bewegen <br>
 A & B / RB & LB - Zutaten drehen
